@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "BonaFid_backend": {
+      "main": "src/BonaFid_backend/main.mo",
+      "type": "motoko"
+    },
+    "BonaFid_frontend": {
+      "dependencies": [
+        "BonaFid_backend"
+      ],
+      "source": [
+        "src/BonaFid_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "BonaFid_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
